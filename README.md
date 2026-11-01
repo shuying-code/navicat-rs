@@ -1,5 +1,7 @@
 # navicat-rs
 
+<p align="center">🌐 <b>Language</b>：<a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.ko.md">한국어</a> · <a href="README.ru.md">Русский</a> · <a href="README.es.md">Español</a> · <a href="README.fr.md">Français</a> · <a href="README.de.md">Deutsch</a> · <a href="README.pt-BR.md">Português</a></p>
+
 一个用 **Rust + egui/eframe** 编写的**跨平台单文件**数据库管理桌面客户端，界面与工作流参考 Navicat Premium 18。
 **所有功能全部免费开放，无登录、无试用、无授权/权限限制。**
 
