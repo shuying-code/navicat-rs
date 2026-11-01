@@ -4,6 +4,7 @@
 **所有功能全部免费开放，无登录、无试用、无授权/权限限制。**
 
 [![CI](https://github.com/zhouyulong123/navicat-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/zhouyulong123/navicat-rs/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/zhouyulong123/navicat-rs?display_name=tag)](https://github.com/zhouyulong123/navicat-rs/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-2f6fed.svg)](#支持的平台)
 [![Rust](https://img.shields.io/badge/rust-1.75%2B-orange.svg)](https://www.rust-lang.org)
@@ -34,6 +35,12 @@
 | Linux (X11 / Wayland) | ✅ 源码与 CI 支持 | 由 CI 在 `ubuntu-latest` 构建（需系统 GUI 依赖） |
 
 程序基于 `eframe/egui`，在三大桌面平台上使用同一套源码；配置文件按平台写入各自的标准目录（见下文）。
+
+## 下载
+
+- **发行版（预编译）**：前往 [Releases](https://github.com/zhouyulong123/navicat-rs/releases) 下载（Windows x64 可执行文件）。
+- **容器镜像**：`docker pull ghcr.io/zhouyulong123/navicat-rs:latest`。
+- **从源码构建**：见下文「快速开始」。
 
 ## 快速开始
 

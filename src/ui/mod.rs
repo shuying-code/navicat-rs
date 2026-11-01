@@ -239,7 +239,7 @@ fn welcome(app: &mut NavicatApp, ui: &mut egui::Ui) {
         ui.horizontal(|ui| {
             ui.add_space(12.0);
             ui.vertical(|ui| {
-                ui.label(RichText::new("Navicat Premium 18 · Rust 版").size(26.0).strong().color(app.pal.accent));
+                ui.label(RichText::new("navicat-rs").size(26.0).strong().color(app.pal.accent));
                 ui.label(RichText::new("多引擎数据库管理 IDE · 全部付费功能免费开放 · 无登录 · 无试用 · 无权限限制").size(14.0).color(app.pal.text_dim));
                 ui.add_space(10.0);
                 card(app).show(ui, |ui| {
@@ -369,7 +369,7 @@ fn dialogs(app: &mut NavicatApp, ctx: &egui::Context) {
         Dialog::About => {
             let mut open = true;
             egui::Window::new("关于 Navicat-RS").collapsible(false).resizable(false).open(&mut open).show(ctx, |ui| {
-                ui.label(RichText::new("Navicat Premium 18 · Rust 版").size(18.0).strong().color(app.pal.accent));
+                ui.label(RichText::new("navicat-rs").size(18.0).strong().color(app.pal.accent));
                 ui.label("基于 eframe/egui 与 rusqlite 构建的本地数据库管理 IDE。");
                 ui.label("技术栈: Rust · eframe/egui · rusqlite · 纯 Rust PostgreSQL 驱动。");
                 ui.separator();
