@@ -18,9 +18,11 @@
 
 | 平台 | 文件 |
 |---|---|
-| Windows x64 | `navicat-rs-windows-x64.exe` |
+| Windows x64 | `navicat-rs-windows-x64.exe` / `navicat-rs-windows-x64.zip` |
+| macOS（Universal, Intel + Apple Silicon） | `navicat-rs-macos-universal.tar.gz` |
+| Linux x64 | `navicat-rs-linux-x64.tar.gz` |
 
-> macOS / Linux 可直接从源码构建（见 README），或使用 `ghcr.io/zhouyulong123/navicat-rs` 容器镜像。
+> Windows 直接双击 exe 运行；macOS/Linux 解压后 `chmod +x` 运行。也可使用 `ghcr.io/shuying-code/navicat-rs` 容器镜像。
 
 ## 使用
 
@@ -34,8 +36,8 @@ navicat-rs --selftest # 无头自检
 ## 容器镜像
 
 ```bash
-docker pull ghcr.io/zhouyulong123/navicat-rs:latest
-docker run --rm ghcr.io/zhouyulong123/navicat-rs:latest --selftest
+docker pull ghcr.io/shuying-code/navicat-rs:latest
+docker run --rm ghcr.io/shuying-code/navicat-rs:latest --selftest
 ```
 
 完整变更见 [CHANGELOG](../CHANGELOG.md)。

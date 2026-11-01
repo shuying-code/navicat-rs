@@ -5,8 +5,8 @@ edition = "2021"
 description = "Navicat-style multi-engine database manager (Rust/egui), all features unlocked, no license gating, cross-platform"
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/zhouyulong123/navicat-rs"
-homepage = "https://github.com/zhouyulong123/navicat-rs"
+repository = "https://github.com/shuying-code/navicat-rs"
+homepage = "https://github.com/shuying-code/navicat-rs"
 keywords = ["database", "sqlite", "postgresql", "egui", "gui"]
 categories = ["database", "gui"]
 

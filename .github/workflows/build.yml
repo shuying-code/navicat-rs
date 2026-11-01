@@ -5,6 +5,11 @@ on:
     branches: [ main ]
     tags: [ 'v*' ]
   workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to attach artifacts to (e.g. v0.1.0)"
+        required: true
+        default: "v0.1.0"
 
 permissions:
   contents: write
@@ -29,9 +34,10 @@ jobs:
           name: navicat-rs-windows-x64
           path: dist/navicat-rs-windows-x64.zip
       - name: Attach to release
-        if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
           files: dist/navicat-rs-windows-x64.zip
 
   macos:
@@ -60,9 +66,10 @@ jobs:
           name: navicat-rs-macos-universal
           path: dist/navicat-rs-macos-universal.tar.gz
       - name: Attach to release
-        if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
           files: dist/navicat-rs-macos-universal.tar.gz
 
   linux:
@@ -90,7 +97,8 @@ jobs:
           name: navicat-rs-linux-x64
           path: dist/navicat-rs-linux-x64.tar.gz
       - name: Attach to release
-        if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag || github.ref_name }}
           files: dist/navicat-rs-linux-x64.tar.gz

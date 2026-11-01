@@ -20,4 +20,4 @@
 - 移除界面中的“复刻”字样，统一为正式产品名展示。
 - 实心按钮文字按背景亮度自动选择黑/白前景，保证任意主题下可读。
 
-[0.1.0]: https://github.com/zhouyulong123/navicat-rs/releases/tag/v0.1.0
+[0.1.0]: https://github.com/shuying-code/navicat-rs/releases/tag/v0.1.0

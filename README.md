@@ -4,12 +4,12 @@
 **所有功能全部免费开放，无登录、无试用、无授权/权限限制。**
 
 <p>
-  <img alt="CI" src="https://github.com/zhouyulong123/navicat-rs/actions/workflows/ci.yml/badge.svg">
-  <img alt="build" src="https://github.com/zhouyulong123/navicat-rs/actions/workflows/build.yml/badge.svg">
+  <img alt="CI" src="https://github.com/shuying-code/navicat-rs/actions/workflows/ci.yml/badge.svg">
+  <img alt="build" src="https://github.com/shuying-code/navicat-rs/actions/workflows/build.yml/badge.svg">
   <img alt="Rust" src="https://img.shields.io/badge/rust-1.75%2B-orange">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-2f6fed">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
-  <img alt="Release" src="https://img.shields.io/github/v/release/zhouyulong123/navicat-rs?display_name=tag">
+  <img alt="Release" src="https://img.shields.io/github/v/release/shuying-code/navicat-rs?display_name=tag">
 </p>
 
 > 本项目为**本地优先**的独立实现，不连接任何云端、不含登录、订阅、试用、遥测。**所有功能对任何人无条件可用。**
@@ -92,13 +92,13 @@ cargo build --release
 
 ## 预编译 / 跨平台产物
 
-- **Releases**：<https://github.com/zhouyulong123/navicat-rs/releases>（Windows x64 可执行文件；打 tag 时 `build.yml` 会自动附加 macOS/Linux 产物）。
+- **Releases**：<https://github.com/shuying-code/navicat-rs/releases>（Windows x64 可执行文件/zip、macOS universal tar.gz、Linux x64 tar.gz；由 `build.yml` 跨平台构建并附加）。
 - **CI 构建矩阵**：`.github/workflows/ci.yml` 在 `ubuntu-latest / macos-latest / windows-latest` 三平台构建并运行 `--selftest`。
 - **容器镜像（GHCR）**：
 
 ```bash
-docker pull ghcr.io/zhouyulong123/navicat-rs:latest
-docker run --rm ghcr.io/zhouyulong123/navicat-rs:latest --selftest
+docker pull ghcr.io/shuying-code/navicat-rs:latest
+docker run --rm ghcr.io/shuying-code/navicat-rs:latest --selftest
 ```
 
 ## 使用
@@ -168,7 +168,7 @@ navicat-rs --selftest   # 无头自检（SQLite 引擎层 + 关键功能，22 �
 
 ## 问题反馈（Issues）
 
-遇到问题或有建议？欢迎通过 GitHub Issues 反馈：<https://github.com/zhouyulong123/navicat-rs/issues/new/choose>。提交前请先阅读 **[使用反馈指南](docs/FEEDBACK.md)**。
+遇到问题或有建议？欢迎通过 GitHub Issues 反馈：<https://github.com/shuying-code/navicat-rs/issues/new/choose>。提交前请先阅读 **[使用反馈指南](docs/FEEDBACK.md)**。
 
 - **🐞 Bug / 问题反馈**：可复现的功能异常、崩溃、报错
 - **💡 功能建议**：新功能或改进
