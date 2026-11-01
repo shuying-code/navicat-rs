@@ -2,6 +2,8 @@
 
 # navicat-rs
 
+> 📘 **[User Manual](docs/用户操作手册.en.md)** · [简体中文手册](docs/用户操作手册.md)
+
 A **cross-platform single-file** database management desktop client built with **Rust + egui/eframe**, with UI and workflow inspired by Navicat Premium 18.
 **All features are free and open; no login, no trial, no license/permission restrictions.**
 
