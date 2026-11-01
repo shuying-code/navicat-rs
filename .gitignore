@@ -1,0 +1,17 @@
+# Build output
+/target
+**/*.rs.bk
+
+# Local run artifacts
+/dist
+/work
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local machine cargo config (target dir override)
+/.cargo/config.toml
