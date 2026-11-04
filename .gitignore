@@ -1,17 +1,21 @@
-# Build output
+# Rust 构建产物
 /target
 **/*.rs.bk
 
-# Local run artifacts
+# 本地构建 / 打包产物
 /dist
 /work
+/work2
 
-# OS / editor
+# 日志
+*.log
+
+# 本机 cargo 配置（target-dir / linker 覆盖，不纳入版本库）
+/.cargo/config.toml
+
+# 操作系统 / 编辑器
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
 *.swp
-
-# Local machine cargo config (target dir override)
-/.cargo/config.toml
