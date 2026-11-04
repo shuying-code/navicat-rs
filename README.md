@@ -181,17 +181,23 @@ navicat-rs --selftest   # 无头自检（SQLite 引擎层 + 关键功能，22 �
 ## 项目结构
 
 ```
-src/
-  main.rs      程序入口、窗口配置、--selftest 自检
-  app.rs       应用状态、标签页路由、动作处理
-  model.rs     数据模型（连接 / 列 / 对象）
-  store.rs     跨平台配置持久化（JSON）
-  db.rs        SQLite 引擎（查询 / CRUD / DDL / 备份 / 数据泵）
-  realdb.rs    PostgreSQL 真实网络协议驱动
-  theme.rs     多主题配色与样式
-  ui/          各功能页面（table / query / designer / er / qb / tools / tree）
-assets/        内嵌中文字体与截图
-docs/          设计、功能矩阵、验收与发布说明
+navicat-rs/
+├─ src/
+│  ├─ main.rs      程序入口、窗口配置、--selftest 自检
+│  ├─ app.rs       应用状态、标签页路由、动作处理
+│  ├─ model.rs     数据模型（连接 / 列 / 对象）
+│  ├─ store.rs     跨平台配置持久化（JSON）
+│  ├─ db.rs        SQLite 引擎（查询 / CRUD / DDL / 备份 / 数据泵）
+│  ├─ realdb.rs    PostgreSQL 真实网络协议驱动
+│  ├─ theme.rs     多主题配色与样式
+│  └─ ui/          各功能页面（table / query / designer / er / qb / tools / tree）
+├─ assets/         内嵌中文字体与截图
+├─ docs/           逆向分析、功能矩阵、Rust 复刻架构、验收与发布说明（见 docs/README.md）
+├─ .github/        Issue 模板与 CI / build / Docker 工作流
+├─ Dockerfile      容器镜像构建
+├─ .editorconfig / .gitattributes / rustfmt.toml   代码风格与换行统一
+├─ CONTRIBUTING.md / SECURITY.md / CODE_OF_CONDUCT.md   协作、安全与行为准则
+└─ dist/           预编译产物（git 忽略）
 ```
 
 ## 本次更新摘要
